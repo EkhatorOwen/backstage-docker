@@ -72,7 +72,8 @@ services:
       - "traefik.http.services.adminerService.loadBalancer.server.port=8080"
 
   backstage:
-    image: backstage:new
+    image: ekhatorowen/backstage:latest
+    #image: backstage:new
     restart: always
     container_name: backstage
     # ports:
